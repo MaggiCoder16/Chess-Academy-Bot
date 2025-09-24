@@ -75,7 +75,7 @@ class Config:
         blacklist = [username.lower() for username in yaml_config.get("blacklist") or []]
 
         return cls(
-            yaml_config.get("url", "https://lichess.org"),
+            yaml_config.get("url", "https://chess-academy.net"),
             yaml_config["token"],
             engine_configs,
             syzygy_config,
